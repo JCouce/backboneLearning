@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>hello-backbonejs</title>
+    <!--Definimos la template de persona en la cabecera para usarla en nuestro views.js-->
+    <script id="personTemplate" type="text/template">
+        <span><strong><%= name %></strong> (<%= age %>) - <%= occupation %></span>
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+    </script>
+</head>
+
+<body>
+    <header style="background-color: steelblue; display: block;">&nbsp;</header>
+    <subheader style="background-color:lightskyblue; display: block;">&nbsp;</subheader>
+
+    <div id="personas"> No se han podido mostrar registros de personas </div>
+
+    <form id="addPerson" action="">
+        <input type="text" placeholder="Name of the person">
+        <input type="submit" value="Add Person">
+    </form>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/underscore/underscore.js"></script>
+    <script src="node_modules/backbone/backbone-min.js"></script>
+
+    <script src="practicas/events.js" type="text/javascript"></script>
+</body>
+
+</html>
